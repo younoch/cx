@@ -1,0 +1,64 @@
+// post page
+#post {
+  .text-h4 {
+    margin-bottom: 15px;
+  }
+  .content {
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+#journeyEntry {
+  .v-stepper__label {
+    .v-btn {
+      position: absolute;
+      top: 13px;
+      right: 0;
+    }
+  }
+}
+
+.post_card {
+  right: 10px;
+  top: 10px;
+  z-index: 100;
+}
+
+.popup_dialog {
+  max-height: 500px !important;
+  overflow-y: auto !important;
+}
+
+.cross_btn {
+  top: -20px !important;
+}
+
+.post-features_action {
+  @include for-tab-device {
+    height: 60px !important;
+  }
+  & .v-btn__content {
+    @include for-tab-device {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
+
+.discussion__content {
+  p {
+    margin-bottom: 0 !important;
+  }
+  iframe {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+}
+
+.padding-x-remove .v-toolbar__content {
+  @include for-more-small-device {
+    padding: 0px;
+  }
+}

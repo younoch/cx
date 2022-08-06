@@ -1,0 +1,270 @@
+// import perfect scrollbar
+@import '~perfect-scrollbar';
+// map image cropper
+@import '~cropperjs';
+// medium editor
+@import '~medium-editor/src/sass/medium-editor.scss';
+@import '~medium-editor/src/sass/themes/beagle.scss';
+
+// import variables
+@import 'variables';
+
+// import font
+@import 'font';
+
+a,
+a:hover,
+a:active,
+a:focus {
+  text-decoration: none;
+}
+
+/* [404] */
+#error {
+  padding: 0;
+
+  h1 {
+    font-size: 150px;
+    line-height: 150px;
+    font-weight: 700;
+    color: #252932;
+    text-shadow: rgba(61, 61, 61, 0.3) 1px 1px, rgba(61, 61, 61, 0.2) 2px 2px,
+      rgba(61, 61, 61, 0.3) 3px 3px;
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 960px) {
+  .container {
+    max-width: 950px;
+  }
+}
+
+@media screen and (max-width: 1264px) and (min-width: 1000px) {
+  .container {
+    max-width: 980px;
+  }
+}
+
+iframe {
+  max-width: 100% !important;
+}
+
+// position
+.relative {
+  position: relative !important;
+}
+
+.absolute {
+  position: absolute !important;
+}
+
+.fixed {
+  position: fixed !important;
+}
+
+// width, height
+.w-100 {
+  width: 100% !important;
+}
+
+.h-100 {
+  height: 100% !important;
+}
+
+.w-128 {
+  width: 128px !important;
+}
+
+.w-135 {
+  width: 135px !important;
+}
+
+.w-126 {
+  width: 126px !important;
+}
+
+.h-128 {
+  height: 128px !important;
+}
+
+.h-135 {
+  height: 135px !important;
+}
+
+.w-256 {
+  width: 256px !important;
+}
+
+.h-256 {
+  height: 256px !important;
+}
+
+.h-150 {
+  height: 150px !important;
+}
+
+.w-150 {
+  width: 150px !important;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.block {
+  display: block !important;
+}
+
+.avatar {
+  position: relative;
+  background-image: linear-gradient(135deg, #21dbaa, #00b4ef, #0768dd);
+  background-size: cover;
+
+  .v-avatar {
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+}
+
+.avatar-spacer {
+  height: 60px;
+}
+
+.v-breadcrumbs {
+  padding-left: 0 !important;
+}
+
+.image-upload {
+  input {
+    display: none;
+  }
+
+  .v-card__text {
+    min-height: 21rem;
+    cursor: pointer;
+
+    .remove {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 1;
+    }
+  }
+}
+
+.card__title {
+  padding: 6px 16px !important;
+  font-size: 1rem !important;
+}
+
+.cx-title {
+  word-break: keep-all !important;
+}
+
+.cx-card__title {
+  flex-wrap: nowrap !important;
+}
+
+.medium-editor-element {
+  min-height: 100px;
+  border: 1px solid rgba($color: #000000, $alpha: 0.38);
+  border-radius: 5px;
+  padding: 5px 10px;
+
+  &:focus {
+    border-color: #58c6e2;
+    outline: none;
+  }
+}
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+// global search style
+@import 'globalSearch';
+// nav style
+@import 'nav';
+// home style
+@import 'home';
+// brainstorm page
+@import 'brainstorm';
+// page style
+@import 'page';
+// login page
+@import 'login';
+// profile page
+@import 'profile';
+// post page
+@import 'post';
+// reaction style
+@import 'reaction';
+// taxonomy entry
+@import 'taxonomy';
+// map page
+@import 'map';
+// feed page
+@import 'feed';
+// messages page
+@import 'chatboard';
+// chatbot
+@import 'chatbot';
+// comment thread
+@import 'comment';
+// connection request card
+@import 'connectionRequestCrard';
+// courses
+@import 'courses';
+
+// theme, light - dark
+@import 'theme';
+
+@import 'my-network';
+
+@import 'link-preview';
+
+// custom utilities
+@import 'utilities';
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.slide-enter-active {
+  transition: all 0.3s ease-in;
+}
+
+.slide-leave-active {
+  transition: all 0.3s ease-out;
+}
+
+.slide-enter,
+.slide-leave-to {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+
+.slide-enter-to,
+.slide-leave {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.line__height {
+  line-height: normal;
+  margin-top: -6px;
+  display: block;
+}

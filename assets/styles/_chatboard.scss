@@ -1,0 +1,90 @@
+.chat-panel {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  display: flex;
+  flex-direction: row-reverse;
+  z-index: 100;
+  align-items: flex-end;
+}
+
+.single-panel .panel-body-messages {
+  min-height: 236px;
+  max-height: 236px;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+.messages .panel-body,
+.panel-body-search {
+  min-height: 300px;
+  max-height: 40vh;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+.filter-subheader {
+  height: 20px;
+}
+
+.attachments .v-input__prepend-outer {
+  margin-top: 0px;
+  margin-right: 0px;
+}
+
+.chat-panel .v-card__title {
+  font-size: 1rem;
+}
+
+.message-sent {
+  width: 90%;
+}
+.message-sent .v-list-item__avatar {
+  margin-top: 2px !important;
+  margin-bottom: 2px !important;
+  margin-right: 0px !important;
+  margin-left: 4px !important;
+}
+.message-sent .v-list-item__subtitle {
+  background-color: lightgreen;
+  border-radius: 5px;
+  padding: 4px !important;
+  cursor: pointer;
+}
+.message-sent .v-list-item__action {
+  margin-top: 2px !important;
+  margin-bottom: 2px !important;
+  margin-left: 0px !important;
+  margin-right: 4px !important;
+}
+
+.message-receipt {
+  width: 90%;
+}
+.message-receipt .v-list-item__avatar {
+  margin-top: 2px !important;
+  margin-bottom: 2px !important;
+  margin-right: 4px !important;
+  margin-left: 0px !important;
+}
+
+.message-receipt .v-list-item__subtitle {
+  background-color: lightblue;
+  border-radius: 5px;
+  padding: 5px !important;
+  cursor: pointer;
+}
+
+.message-receipt .v-list-item__action {
+  margin-top: 2px !important;
+  margin-bottom: 2px !important;
+  margin-left: 4px !important;
+  margin-right: 0px !important;
+}
+
+.v-card--reveal {
+  bottom: 0;
+  opacity: 1 !important;
+  position: absolute;
+  width: 100%;
+}

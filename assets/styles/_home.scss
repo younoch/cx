@@ -1,0 +1,41 @@
+@import 'mixin';
+
+// home style
+#home {
+  padding-top: 64px;
+
+  @include mobile {
+    padding-top: 0;
+  }
+
+  .row {
+    margin-bottom: 40px;
+  }
+
+  .text-h2 {
+    font-weight: 900;
+  }
+
+  .player {
+    .v-icon {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
+  }
+}
+
+.v-footer {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    a {
+      padding: 0 10px;
+      font-size: 12px;
+    }
+  }
+}

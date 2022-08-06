@@ -1,0 +1,55 @@
+// reaction menu
+.social-share {
+  background-color: var(--color-bg-white) !important;
+}
+.reaction {
+  background-color: var(--color-bg-white) !important;
+}
+
+.share_reaction {
+  background: transparent !important;
+}
+
+.user-reacted-icons {
+  display: flex;
+  align-items: center;
+  line-height: 18px;
+  .icon {
+    padding: 3px;
+    border-radius: 50%;
+    margin-right: 3px;
+    background: transparent !important;
+  }
+  padding-left: 8px;
+}
+
+.user-rated-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &.angry {
+    .v-icon {
+      color: red;
+    }
+  }
+  &.confused {
+    .v-icon {
+      color: orangered;
+    }
+  }
+  &.neutral {
+    .v-icon {
+      color: greenyellow;
+    }
+  }
+  &.happy {
+    .v-icon {
+      color: lightgreen;
+    }
+  }
+  &.excited {
+    .v-icon {
+      color: green;
+    }
+  }
+}

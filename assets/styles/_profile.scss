@@ -1,0 +1,73 @@
+// profile page
+#profile {
+  .follower {
+    .text-h6 {
+      font-weight: 900;
+    }
+  }
+  .profile {
+    overflow: visible;
+  }
+  .v-card__title {
+    padding: 6px 16px;
+    font-size: 1rem;
+  }
+  // .VueCarousel {
+  //   box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+  //     0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  // }
+  .VueCarousel-slide {
+    width: 100%;
+    margin: 0;
+    flex: 0 0 100%;
+    .v-card {
+      border: 2px solid transparent;
+
+      &.nuxt-link-active {
+        border-color: #58c6e2;
+      }
+    }
+  }
+}
+
+.edit_imput {
+  display: none;
+}
+
+.greyBackground {
+  background: $grey;
+}
+
+.profile-cancel.v-btn--outlined {
+  border: thin solid $grey-muted;
+}
+
+.pro_follow {
+  @include for-tab1-device {
+    display: none;
+  }
+}
+
+.count_follows {
+  @include for-tab1-device {
+    padding-left: 5px;
+    padding-right: 0px;
+  }
+}
+
+.count_following {
+  @include for-tab1-device {
+    padding-right: 12px;
+  }
+}
+
+.follows__sticky-topbar {
+  position: sticky;
+  top: 64px !important;
+  z-index: 5;
+  background-color: var(--color-page-background);
+
+  @include responsiveMax(768px) {
+    top: 56px !important;
+  }
+}

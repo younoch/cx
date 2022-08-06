@@ -1,0 +1,57 @@
+// navbar style
+.logo-text {
+  max-width: 100px;
+}
+
+#appBar {
+  .logo {
+    max-width: 40px;
+  }
+
+  .v-btn {
+    border-bottom: 2px solid transparent;
+    font-size: 0.75rem;
+    padding: 13px 10px;
+    position: relative;
+    &::before {
+      opacity: 0;
+      content: '';
+      width: 100%;
+      height: 4px;
+      background-color: var(--color-primary);
+      display: block;
+      position: absolute;
+      bottom: 0;
+      top: auto;
+      left: 0;
+      right: 0;
+      border-radius: 20px 20px 0 0;
+    }
+
+    &.v-btn--active {
+      &:hover::before,
+      &::before {
+        opacity: 1;
+      }
+    }
+  }
+
+  .menu-item {
+    text-align: center;
+
+    h4 {
+      font-weight: 500;
+      color: var(--color-heading);
+      text-transform: none;
+    }
+  }
+}
+
+// Notification fixed style
+.read-notification {
+  background-color: var(--color-white);
+}
+
+.unread-notification {
+  background: var(--color-notification-bg);
+}

@@ -1,0 +1,95 @@
+@mixin mobile {
+  @media only screen and (max-width: 600px) {
+    @content;
+  }
+}
+
+@mixin for-big-device {
+  @media only screen and (max-width: 1264px) {
+    @content;
+  }
+}
+
+@mixin for-ipad-device {
+  @media only screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin for-vuetify-breakpoint {
+  @media only screen and (max-width: 959px) {
+    @content;
+  }
+}
+
+@mixin for-medium-device {
+  @media only screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin for-small-device {
+  @media only screen and (max-width: 426px) {
+    @content;
+  }
+}
+
+@mixin for-more-small-device {
+  @media only screen and (max-width: 375px) {
+    @content;
+  }
+}
+
+@mixin for-medium-small-device {
+  @media only screen and (max-width: 414px) {
+    @content;
+  }
+}
+
+@mixin for-tab-device {
+  @media (min-width: 768px) and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin for-tab1-device {
+  @media (min-width: 960px) and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin for-tab-small-device {
+  @media (min-width: 600px) and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin for-lower-device {
+  @media (min-width: 426px) and (max-width: 510px) {
+    @content;
+  }
+}
+
+@mixin for-horizontal-tab-view {
+  @media (min-width: 1264px) and (max-width: 1903px) {
+    @content;
+  }
+}
+
+@mixin for-rotated-tab-view {
+  @media (min-width: 960px) and (max-width: 1263px) {
+    @content;
+  }
+}
+// global reuseable responsive
+@mixin responsiveMax($screenSize) {
+  @media only screen and (max-width: $screenSize) {
+    @content;
+  }
+}
+
+@mixin responsiveMin($screenSize) {
+  @media only screen and (min-width: $screenSize) {
+    @content;
+  }
+}
